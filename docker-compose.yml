@@ -7,6 +7,6 @@ services:
       - VIRTUAL_HOST=${domain}
   volumes:
     - ./logs:/var/log/nginx/log
-    - ./static:/usr/share/nginx/html
+    - ./web:/usr/share/nginx/html
   ports:
     - "80:80"
